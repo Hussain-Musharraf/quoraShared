@@ -27,11 +27,10 @@ const Question = () => {
         
         <form onSubmit={handleSubmit} className="qsn">
             <div>
-                <input placeholder="Question: Type your question here.........."/>
+                <input id="input1" placeholder="Question: Type your question here.........."/>
             </div>
             <div className="qsnbtn">
-                {/* <button>Cancel</button> */}
-                <input type="submit" value="Add question"/>
+                <input type="submit" id="input2" value="Add question"/>
             </div>
        </form>
     </div>

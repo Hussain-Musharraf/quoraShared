@@ -42,17 +42,24 @@ const Home = () => {
         </nav>
         <div className="question-div">
             <div className="que-left">
+                <h3>Questions and Answers :</h3>
                 {qsnAnsArr.map( ([key,value])=>(
                         <React.Fragment key={key}>
-                            <h3 >{key}</h3>
-                            <p >{value}</p>
+                            <h3>{key}</h3>
+                            <div className='ans-div1'>   
+                                <h3>Ans:</h3>
+                                <h5 style={{marginLeft:10}}>{value}</h5>
+                            </div>
                         </React.Fragment>
                     )
                 )}
             </div>
             <div className="que-right">
+                <h1>Questions:</h1>
                 {qsnArr.map( ([key])=>(
-                    <h3 key={key}>{key}</h3>
+                    <ul>
+                        <li key={key}>{key}</li>
+                    </ul>
                 ))}
             </div>
         </div>

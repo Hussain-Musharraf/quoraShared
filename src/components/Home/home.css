@@ -27,15 +27,24 @@ input {
 .question-div {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(250, 237, 237);
+    background-color: rgb(216, 213, 213);
 }
 .que-left {
-    margin: 100px;
-    padding: 100px; 
-    background-color: aqua;
+    width: 45vw;
+    height: 50vh;
+    margin: 50px;
+    padding: 50px; 
+    background-color: white;
 }
 .que-right {
-    margin: 100px;
-    padding: 100px;
-    background-color: bisque;
+    width: 30vw;
+    height: 50vh;
+    margin: 50px;
+    padding: 50px;
+    background-color: white;
+}
+
+.ans-div1 {
+    display: flex;
+    
 }

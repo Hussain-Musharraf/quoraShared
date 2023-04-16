@@ -7,10 +7,6 @@
     background-color: white;
     font-weight: bold;
 }
-.qsnbtn{
-    display: flex;
-    justify-content:flex-end;
-}
 .qsnimg{
     background-color: white;
 }
@@ -18,4 +14,14 @@
     padding: 10px;
     background-color:rgb(199, 191, 191);
     height: 80vh;
+}
+
+#input1 {
+    height: 10vh;
+}
+
+#input2 {
+    width: 200px;
+    color: white;
+    background-color: red;
 }
