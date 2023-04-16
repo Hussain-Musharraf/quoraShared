@@ -23,7 +23,7 @@ const Home = () => {
         navigate('/answer')
     }
     const handleLogin=()=>{
-        navigate('/login')
+        navigate('/')
     }
   return (
     <div>
