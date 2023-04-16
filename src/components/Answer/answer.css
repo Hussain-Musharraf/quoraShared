@@ -1,0 +1,22 @@
+.ans{
+    display: flex;
+    background-color: rgb(227, 223, 223);
+    height: 80vh;
+}
+.arrDiv{
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+}
+.ansBox{
+    padding: 10px;
+    margin: 50px;
+}
+.qsn_ans{
+    color: red;
+    text-decoration: underline;
+}
+.qsn_ans:hover{
+    color: black;
+    cursor: pointer;
+}

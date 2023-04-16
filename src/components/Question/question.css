@@ -1,0 +1,21 @@
+/* 
+ */
+.qsn input{
+    padding: 15px;
+    margin: 5px;
+    width: 92%;
+    background-color: white;
+    font-weight: bold;
+}
+.qsnbtn{
+    display: flex;
+    justify-content:flex-end;
+}
+.qsnimg{
+    background-color: white;
+}
+.qsn{
+    padding: 10px;
+    background-color:rgb(199, 191, 191);
+    height: 80vh;
+}

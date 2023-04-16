@@ -1,0 +1,41 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+input {
+    width: 25vw;
+    padding : 10px;
+    background-color: rgb(236, 231, 231);
+    border: none;
+    border-radius: 6px;
+}
+.question-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 237, 237);
+}
+.que-left {
+    margin: 100px;
+    padding: 100px; 
+    background-color: aqua;
+}
+.que-right {
+    margin: 100px;
+    padding: 100px;
+    background-color: bisque;
+}
