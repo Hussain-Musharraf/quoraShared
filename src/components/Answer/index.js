@@ -44,7 +44,7 @@ const Answer = () => {
                 ))}
             </div>
             <div  className="ansBox">
-                {getFlag?<h1>Type your answer here</h1>:''}
+                {getFlag?<h1>{getTypeQuestion}</h1>:''}
                 <textarea id="txtArea" cols="80" rows="10" placeholder="Type your answer here ............." />
                 <input type="submit" id="input3" value="Add answer" />
             </div>
