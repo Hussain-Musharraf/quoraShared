@@ -6,18 +6,15 @@ import { QuestionContext } from "../context/QuestionContext"
 
 const Question = () => {
   let value = React.useContext(QuestionContext);
- // const [getInput,setInput] = useState('');
-  // const handleChange = (e)=>{
-  //   setInput(e.target.value);
-  //   console.log(getInput)
-  // }
   const navigate = useNavigate();
-
   const handleSubmit = (e)=>{
     e.preventDefault();
     console.log(e.target[0].value)
     value.addQuestion(e.target[0].value);
-    navigate('/')
+    navigate('/home')
+  }
+  const handleCancel=()=>{
+    navigate('/home');
   }
   return (
     <div>
@@ -31,6 +28,7 @@ const Question = () => {
             </div>
             <div className="qsnbtn">
                 <input type="submit" id="input2" value="Add question"/>
+                <button onClick={handleCancel}>Cancel</button>
             </div>
        </form>
     </div>

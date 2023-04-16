@@ -5,9 +5,15 @@
     margin-left: 100px;
     margin-right: 100px;
 }
-.bdy{
+/* .bdy{
     background:url("../../assets/image/lgnBackground.png")
-}
+} */
 .lgnDiv{
-    display: flex;
+
+}
+
+.submitBtn{
+    background-color: red;
+    color: white;
+    font-weight: bold;
 }

@@ -28,7 +28,10 @@ const Answer = () => {
         ans = e.target[0].value;
         console.log(e.target[0].value);
        value.addQuestionAns(getTypeQuestion,ans);
-       navigate('/');
+       navigate('/home');
+    }
+    const handleBack=()=>{
+        navigate('/home');
     }
 
   return (
@@ -47,6 +50,8 @@ const Answer = () => {
                 {getFlag?<h1>{getTypeQuestion}</h1>:''}
                 <textarea id="txtArea" cols="80" rows="10" placeholder="Type your answer here ............." />
                 <input type="submit" id="input3" value="Add answer" />
+                <br />
+                <button onClick={handleBack}>Cancel</button>
             </div>
         </form>
     </div>
