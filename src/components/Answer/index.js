@@ -43,15 +43,15 @@ const Answer = () => {
             <div className="arrDiv">
                 <h1>Select Question</h1>
                 {ansArr.map( ([key, value])=>(
-                    <h3 key={key} className="qsn_ans" onClick={()=>handleQuestionClick(key)}>{key}</h3>
+                    <h4 key={key} className="qsn_ans" onClick={()=>handleQuestionClick(key)}>{key}</h4>
                 ))}
             </div>
             <div  className="ansBox">
-                {getFlag?<h1>{getTypeQuestion}</h1>:''}
+                {getFlag?<p>{getTypeQuestion}</p>:''}
                 <textarea id="txtArea" cols="80" rows="10" placeholder="Type your answer here ............." />
                 <input type="submit" id="input3" value="Add answer" />
                 <br />
-                <button onClick={handleBack}>Cancel</button>
+                <button id="btn02" onClick={handleBack}>Cancel</button>
             </div>
         </form>
     </div>

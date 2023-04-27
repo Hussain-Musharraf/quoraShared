@@ -28,3 +28,14 @@
     background-color: red;
     color: white;
 }
+
+#btn02 {
+    width: 25vw;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+}
+
+#txtArea {
+    min-height: 30px;
+}

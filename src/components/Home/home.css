@@ -31,20 +31,23 @@ input {
 }
 .que-left {
     width: 45vw;
+    /* min-height: 50vh; */
     height: 50vh;
     margin: 50px;
-    padding: 50px; 
+    padding: 50px;
+    overflow: scroll; 
     background-color: white;
 }
 .que-right {
     width: 30vw;
+    /* min-height: 50vh; */
     height: 50vh;
     margin: 50px;
     padding: 50px;
+    overflow: scroll;
     background-color: white;
 }
 
 .ans-div1 {
     display: flex;
-    
 }

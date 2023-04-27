@@ -1,5 +1,5 @@
 .logo{
-    background-color: white;
+    background-color: rgb(212, 210, 210);
     margin-top: 70px;
     text-align: center;
     margin-left: 100px;
@@ -12,8 +12,17 @@
 
 }
 
+.login1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .submitBtn{
     background-color: red;
     color: white;
     font-weight: bold;
+    margin-bottom: 50px;
+    width: 10vw;
 }

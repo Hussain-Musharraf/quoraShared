@@ -28,7 +28,7 @@ const Question = () => {
             </div>
             <div className="qsnbtn">
                 <input type="submit" id="input2" value="Add question"/>
-                <button onClick={handleCancel}>Cancel</button>
+                <button id="btn01" onClick={handleCancel}>Cancel</button>
             </div>
        </form>
     </div>

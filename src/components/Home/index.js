@@ -2,9 +2,9 @@
 import React from 'react'
 import logo from "../../assets/image/Quora-logo.png"
 import { useNavigate } from "react-router-dom"
-import "./home.css"
-import { useState } from "react";
+import "./home.css";
 import { QuestionContext } from "../context/QuestionContext";
+// import SearchBar from '../SearchBar';
 
 const Home = () => {
 
@@ -37,7 +37,7 @@ const Home = () => {
             <div className="right">
                 <div><button onClick={handleQuestion}>Add Question</button></div>
                 <div><button onClick={handleAnswer}>Answer Question</button></div>
-                <div><button onClick={handleLogin}>Login</button></div>            
+                <div><button onClick={handleLogin}>Logout</button></div>            
             </div>
         </nav>
         <div className="question-div">
@@ -45,10 +45,13 @@ const Home = () => {
                 <h3>Questions and Answers :</h3>
                 {qsnAnsArr.map( ([key,value])=>(
                         <React.Fragment key={key}>
-                            <h3>{key}</h3>
+                            <div className='ans-div1'>
+                                <h4>Que:</h4>
+                                <h4 style={{marginLeft:10}}>{key}</h4>
+                            </div>
                             <div className='ans-div1'>   
-                                <h3>Ans:</h3>
-                                <h5 style={{marginLeft:10}}>{value}</h5>
+                                <p style={{marginTop:-10}}>Ans:</p>
+                                <p style={{marginLeft:10,marginTop:-10}}>{value}</p>
                             </div>
                         </React.Fragment>
                     )
@@ -58,7 +61,7 @@ const Home = () => {
                 <h1>Questions:</h1>
                 {qsnArr.map( ([key])=>(
                     <ul>
-                        <li key={key}>{key}</li>
+                        <li key={key}><h3>{key}</h3></li>
                     </ul>
                 ))}
             </div>
